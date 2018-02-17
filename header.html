@@ -1,0 +1,195 @@
+<script src="js/custom-mycart.js"></script>
+<nav class="top-header">
+    <!-- header-bot -->
+    <div class="header-bot">
+        <div class="header-bot_inner_wthreeinfo_header_mid">
+            <!--<div class="col-md-4 header-middle">-->
+            <!--<form action="#" method="post">-->
+            <!--<input type="search" name="search" placeholder="Search here..." required="">-->
+            <!--<input type="submit" value=" ">-->
+            <!--<div class="clearfix"></div>-->
+            <!--</form>-->
+            <!--</div>-->
+            <!-- header-bot -->
+            <div class="col-md-6 logo_agile">
+                <h1><a href="index.html"><span>N</span>ilanjana Sensarkar</a></h1> <!--<i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1> -->
+            </div>
+            <!-- header-bot -->
+            <div class="col-md-6 agileits-social top_content">
+                <ul class="social-nav model-3d-0 footer-social w3_agile_social">
+                    <li class="share">Follow On : </li>
+                    <li><a href="#" class="facebook">
+                        <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                    <li><a href="#" class="twitter">
+                        <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                    <li><a href="#" class="instagram">
+                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
+                    <li><a href="#" class="pinterest">
+                        <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+                </ul>
+
+
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //header-bot -->
+    <!-- banner -->
+    <div class="ban-top">
+        <div class="container">
+            <div class="top_nav_left">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav menu__list" id="custom_nav_menu">
+                                <li id="custom_menu_item_1" class="active menu__item menu__item--current"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                                <li id="custom_menu_item_2" class=" menu__item"><a class="menu__link" href="shop.html">Shop</a></li>
+                                <li id="custom_menu_item_3" class=" menu__item"><a class="menu__link" href="portfolio.html">Portfolio</a></li>
+                                <li id="custom_menu_item_4" class=" menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="top_nav_right">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box_1">
+                            <a role="button"
+                               class="login-btn hvr-outline-out"
+                               data-toggle="modal"
+                               href="#modal-login"> <!-- This modal id corresponds to the (parent id of this div) -->
+                                Login
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box_1">
+                            <button class="glyphicon glyphicon-shopping-cart w3view-cart my-cart-icon">
+                                <span class="badge badge-notify my-cart-badge"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //banner-top -->
+</nav>
+
+
+<!-- Modal Dialog -->
+<div class="modal fade login-register-form" role="dialog" id="modal-login">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <div class="modal-header modal-header-login">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#login-form"> Login <span class="glyphicon glyphicon-user"></span></a></li>
+                    <li><a data-toggle="tab" href="#registration-form"> Register <span class="glyphicon glyphicon-pencil"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="modal-body modal-body-login">
+                <div class="tab-content">
+
+                    <div id="login-form" class="tab-pane fade in active">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            </div>
+                            <!--<div class="checkbox">-->
+                                <!--<label><input type="checkbox" name="remember"> Remember me</label>-->
+                            <!--</div>-->
+                        </form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="login-modal-btn">Login</button>
+                            </div>
+                            <div class="col-md-6" onclick="(function() {
+                                 $('#modal-login').modal('hide');
+                            })();">
+                                <button class="login-modal-btn">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="registration-form" class="tab-pane fade">
+                        <form>
+                            <div class="form-group">
+                                <label for="newfirstname">First Name:</label>
+                                <input type="email" class="form-control" id="newfirstname" placeholder="Enter your first name" name="newfirstname">
+                            </div>
+                            <div class="form-group">
+                                <label for="newlastname">Last Name:</label>
+                                <input type="email" class="form-control" id="newlastname" placeholder="Enter your last name" name="newlastname">
+                            </div>
+                            <div class="form-group">
+                                <label for="newusername">Username:</label>
+                                <input type="email" class="form-control" id="newusername" placeholder="Enter desired username" name="newusername">
+                            </div>
+                            <div class="form-group">
+                                <label for="newemail">Email:</label>
+                                <input type="email" class="form-control" id="newemail" placeholder="Enter your email id" name="newemail">
+                            </div>
+                            <div class="form-group">
+                                <label for="newshipaddress">Shipping Address:</label>
+                                <input type="email" class="form-control" id="newshipaddress" placeholder="Enter Address" name="newemail">
+                            </div>
+                            <div class="form-group">
+                                <label for="newshipaddresszipcode">Zip Code:</label>
+                                <input type="email" class="form-control" id="newshipaddresszipcode" placeholder="Enter Zip Code" name="newemail">
+                            </div>
+                            <div class="form-group">
+                                <label for="newpwd">Password:</label>
+                                <input type="password" class="form-control" id="newpwd" placeholder="New password" name="newpwd">
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="login-modal-btn">Register</button>
+                            </div>
+                            <div class="col-md-6" onclick="(function() {
+                                 $('#modal-login').modal('hide');
+                            })();">
+                                <button class="login-modal-btn">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--                                    <div class="modal-footer">-->
+            <!--                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--                                    </div>-->
+        </div>
+    </div>
+</div>
+<!-- //Modal Dialog -->

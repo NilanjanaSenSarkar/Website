@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeaWebsite | Shop</title>
+    <!--/tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--//tags -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/customStyle.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+    <link href="css/custom-isotopes.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/custom-portfolio-flexslider.css" type="text/css" media="screen" />
+    <!-- //for bootstrap working -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body onload="generalOnLoad(3);">
+
+<nav id="top-header"></nav>
+<br/>
+<div class="container filter-elements" style="text-align: center">
+    <div class = "row">
+        <div class="col-md-9">
+            <div id="filters" class="button-group form-group">
+                <!--<button name="button" class="button is-checked btn-responsive rounded-btn" data-filter="*">View All</button>-->
+                <!--<button name="button" class="button btn-responsive rounded-btn" data-filter=".metal">Category 1</button>-->
+                <!--<button name="button" class="button btn-responsive rounded-btn" data-filter=".transition">Category 2</button>-->
+                <!--<button name="button" class="button btn-responsive rounded-btn" data-filter=".alkali, .alkaline-earth">Category 3</button>-->
+                <!--<button name="button" class="button btn-responsive rounded-btn" data-filter=":not(.transition)">Category 4</button>-->
+                <!--<button name="button" class="button btn-responsive rounded-btn" data-filter=".metal:not(.transition)">Category 5</button>-->
+
+                <button name="button" class="button is-checked btn-responsive rounded-btn" data-filter="*">View All</button>
+                <button name="button" class="button btn-responsive rounded-btn" data-filter=".category-1">Category 1</button>
+                <button name="button" class="button btn-responsive rounded-btn" data-filter=".category-2">Category 2</button>
+                <button name="button" class="button btn-responsive rounded-btn" data-filter=".category-3">Category 3</button>
+                <button name="button" class="button btn-responsive rounded-btn" data-filter=".category-4">Category 4</button>
+                <button name="button" class="button btn-responsive rounded-btn" data-filter=".category-5">Category 5</button>
+
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group top-padding">
+                <input class="form-control" id="quicksearch" type="text" placeholder="Search">
+            </div>
+            <!--<input type="text" id="quicksearch" placeholder="Search" />-->
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div class="container">
+        <!-- products -->
+        <div class="grid">
+
+            <!-- Product 1 -->
+            <div class="element-item portfolio-thumbnail category-1"
+                 data-category="category-1"
+                 onmouseover="onHover(this.id);"
+                 onmouseleave="onUnHover(this.id)"
+                 id="123"> <!-- This id is the project id which is supposed to be unique-->
+                <img src="images/banner1.jpg" width="100%" height="100%"/>
+                <span class="product-new-top">Category 1</span>
+                <div class="portfolio-thumbnail-project-name name"> Project AAA </div>
+                <div class="portfolio-thumbnail-project-details"
+                     id="short-details-123"> <!-- This id is in ref with the parent div id-->
+                    <span class="portfolio-thumbnail-project-details-heading">Project AAA</span>
+                    <p>
+                        Short Details of Project AAA
+                        Short Details of Project AAA
+                        Short Details of Project AAA
+                    </p>
+                    <br/>
+
+                    <a role="button"
+                       class="btn btn-default hvr-outline-out portfolio-thumbnail-project-details-btn"
+                       data-toggle="modal"
+                       href="#modal-123"> <!-- This modal id corresponds to the (parent id of this div) -->
+                        View Details
+                    </a>
+                </div>
+                <!--<h3 class="name">Antimony</h3>-->
+                <!--<p class="symbol">Sb</p>-->
+                <!--<p class="number">51</p>-->
+                <!--<p class="weight">121.76</p>-->
+                <!-- This modal id corresponds to the (parent id of this div) -->
+                <div id="modal-123" class="modal modal-wide fade" data-easein="bounce"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    ×
+                                </button>
+                                <h4 class="modal-title">
+                                    Project AAA
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <!--<div class="container">-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="">
+                                                <div class="flexslider">
+                                                    <ul class="slides">
+                                                        <li data-thumb="images/b1.jpg">
+                                                            <img src="images/b1.jpg"/>
+                                                        </li>
+                                                        <li data-thumb="images/b2.jpg">
+                                                            <img src="images/b2.jpg" />
+                                                        </li>
+                                                        <li data-thumb="images/b3.jpg">
+                                                            <p class="flex-caption">Text Over Slide 3</p>
+                                                            <img src="images/b3.jpg" />
+                                                        </li>
+                                                        <li data-thumb="images/b4.jpg">
+                                                            <p class="flex-caption">Text Over Slide 4</p>
+                                                            <img src="images/b4.jpg" />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <iframe width="100%" height="330"
+                                                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                <!--</div>-->
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">
+                                    Close
+                                </button>
+                                <!--<button class="btn btn-primary">-->
+                                    <!--Save changes-->
+                                <!--</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- // Project 1 -->
+
+            <!-- Project 2 -->
+            <div class="element-item portfolio-thumbnail category-2"
+                 data-category="category-2"
+                 onmouseover="onHover(this.id);"
+                 onmouseleave="onUnHover(this.id)"
+                 id="234"> <!-- This id is the project id which is supposed to be unique-->
+                <img src="images/banner2.jpg" width="100%" height="100%"/>
+                <span class="product-new-top">Category 2</span>
+                <div class="portfolio-thumbnail-project-name name"> BBB Project </div>
+                <div class="portfolio-thumbnail-project-details"
+                     id="short-details-234"> <!-- This id is in ref with the parent div id-->
+                    <span class="portfolio-thumbnail-project-details-heading">BBB Project</span>
+                    <p>
+                        Short Details of BBB Project
+                        Short Details of BBB Project
+                        Short Details of BBB Project
+                    </p>
+                    <br/>
+
+                    <a role="button"
+                       class="btn btn-default hvr-outline-out portfolio-thumbnail-project-details-btn"
+                       data-toggle="modal"
+                       href="#modal-234"> <!-- This modal id corresponds to the (parent id of this div) -->
+                        View Details
+                    </a>
+                </div>
+                <!--<h3 class="name">Cobalt</h3>-->
+                <!--<p class="symbol">Co</p>-->
+                <!--<p class="number">27</p>-->
+                <!--<p class="weight">58.933</p>-->
+                <!-- This modal id corresponds to the (parent id of this div) -->
+                <div id="modal-234" class="modal modal-wide fade" data-easein="bounce"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    ×
+                                </button>
+                                <h4 class="modal-title">
+                                    BBB Project
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">
+                                    Close
+                                </button>
+                                <!--<button class="btn btn-primary">-->
+                                    <!--Save changes-->
+                                <!--</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- // Project 2 -->
+
+            <!-- Project 3 -->
+            <div class="element-item portfolio-thumbnail category-1"
+                 data-category="category-1"
+                 onmouseover="onHover(this.id);"
+                 onmouseleave="onUnHover(this.id)"
+                 id="345"> <!-- This id is the project id which is supposed to be unique-->
+                <img src="images/banner3.jpg" width="100%" height="100%"/>
+                <span class="product-new-top">Category 1</span>
+                <div class="portfolio-thumbnail-project-name name"> CCC YYYYYY </div>
+                <div class="portfolio-thumbnail-project-details"
+                     id="short-details-345"> <!-- This id is in ref with the parent div id-->
+                    <span class="portfolio-thumbnail-project-details-heading">CCC YYYYYY</span>
+                    <p>
+                        Short Details of CCC YYYYYY
+                        Short Details of CCC YYYYYY
+                        Short Details of CCC YYYYYY
+                    </p>
+                    <br/>
+
+                    <a role="button"
+                       class="btn btn-default hvr-outline-out portfolio-thumbnail-project-details-btn"
+                       data-toggle="modal"
+                       href="#modal-345"> <!-- This modal id corresponds to the (parent id of this div) -->
+                        View Details
+                    </a>
+                </div>
+                <!--<h3 class="name">Ytterbium</h3>-->
+                <!--<p class="symbol">Yb</p>-->
+                <!--<p class="number">70</p>-->
+                <!--<p class="weight">173.054</p>-->
+                <!-- This modal id corresponds to the (parent id of this div) -->
+                <div id="modal-345" class="modal modal-wide fade" data-easein="bounce"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    ×
+                                </button>
+                                <h4 class="modal-title">
+                                    CCC YYYYYY
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">
+                                    Close
+                                </button>
+                                <!--<button class="btn btn-primary">-->
+                                    <!--Save changes-->
+                                <!--</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //Project 3 -->
+
+        </div> <!-- //grid -->
+
+
+</div>
+<!-- //mens -->
+<!-- footer -->
+<div class="footer1" id="footer"></div>
+<!-- //footer -->
+
+<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<script src="js/modernizr.custom.js"></script>
+<!-- Custom-JavaScript-File-Links -->
+<!-- cart-js -->
+<script type='text/javascript' src="js/jquery.mycart.js"></script>
+<script>
+    $(function(){
+        $("#top-header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+<script src="js/custom-general-onload.js"></script>
+<!--<script src=custom-mycart.jsS.js"></script>-->
+<script>
+    // Mini Cart
+    paypal.minicart.render({
+        action: '#'
+    });
+
+    if (~window.location.search.indexOf('reset=true')) {
+        paypal.minicart.reset();
+    }
+</script>
+
+<!-- //cart-js -->
+<!-- script for responsive tabs -->
+<script src="js/easy-responsive-tabs.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+        $('#verticalTab').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+        });
+    });
+</script>
+<!-- //script for responsive tabs -->
+<!-- stats -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+</script>
+<!-- //stats -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+
+<!-- for bootstrap working -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+
+<!-- custom JS for shop/filer-shop page -->
+<script src="js/custom-shopJS.js"></script>
+<!-- //custom JS for shop/filer-shop page -->
+
+<!-- custom JS for isotopes for filtering and search -->
+<!--<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>-->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="js/custom-isotopes.js"></script>
+<script type="text/javascript">
+    // Put the following code after isotope js include
+    // Override and customize Isotope FitRows layout mode: CENTER each rows
+    var fitRows = Isotope.LayoutMode.modes.fitRows.prototype;
+    fitRows._resetLayout = function() {
+
+        // pre-calculate offsets for centering each row
+        this.x = 0;
+        this.y = 0;
+        this.maxY = 0;
+        this._getMeasurement( 'gutter', 'outerWidth' );
+        this.centerX = [];
+        this.currentRow = 0;
+        this.initializing = true;
+        for ( var i=0, len = this.items.length; i < len; i++ ) {
+            var item = this.items[i];
+            this._getItemLayoutPosition(item);
+        }
+        this.centerX[this.currentRow].offset = (this.isotope.size.innerWidth +this.gutter-this.x) / 2;
+        this.initializing = false;
+        this.currentRow = 0;
+
+        // centered offsets were calculated, reset layout
+        this.x = 0;
+        this.y = 0;
+        this.maxY = 0;
+        this._getMeasurement( 'gutter', 'outerWidth' );
+    };
+    fitRows._getItemLayoutPosition = function( item ) {
+        item.getSize();
+        var itemWidth = item.size.outerWidth + this.gutter;
+        // if this element cannot fit in the current row
+        var containerWidth = this.isotope.size.innerWidth + this.gutter;
+        if ( this.x !== 0 && itemWidth + this.x > containerWidth ) {
+
+            if (this.initializing)
+                this.centerX[this.currentRow].offset = (containerWidth-this.x) / 2;
+            this.currentRow++;
+
+            this.x = 0;
+            this.y = this.maxY;
+        }
+
+        if (this.initializing && this.x == 0) {
+            this.centerX.push({ offset: 0});
+        }
+        //if (this.centerX[this.currentRow].offset < 0)
+        //  this.centerX[this.currentRow].offset = 0;
+
+        var position = {
+            x: this.x+(this.initializing?0:this.centerX[this.currentRow].offset),
+            y: this.y
+        };
+
+        this.maxY = Math.max( this.maxY, this.y + item.size.outerHeight );
+        this.x += itemWidth;
+
+        return position;
+    };
+</script>
+<!-- //custom JS for isotopes for filtering and search -->
+
+<!-- Hover -->
+<script>
+    function onHover(id) {
+        document.getElementById("short-details-"+id).style.display="block";
+    }
+
+    function onUnHover(id) {
+        document.getElementById("short-details-"+id).style.display="none";
+    }
+
+</script>
+<!-- //Hover -->
+
+<!--Modal -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
+<script>
+    $(".modal").each(function(l){$(this).on("show.bs.modal",function(l){var o=$(this).attr("data-easein");"shake"==o?$(".modal-dialog").velocity("callout."+o):"pulse"==o?$(".modal-dialog").velocity("callout."+o):"tada"==o?$(".modal-dialog").velocity("callout."+o):"flash"==o?$(".modal-dialog").velocity("callout."+o):"bounce"==o?$(".modal-dialog").velocity("callout."+o):"swing"==o?$(".modal-dialog").velocity("callout."+o):$(".modal-dialog").velocity("transition."+o)})});
+</script>
+<script>
+    $(".modal-wide").on("show.bs.modal", function() {
+        var height = $(window).height() - 200;
+        $(this).find(".modal-body").css("max-height", height);
+    });
+</script>
+<!-- //Modal -->
+
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider.js"></script>
+<script>
+    // Can also be used with $(document).ready()
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails"
+        });
+    });
+</script>
+<!-- //FlexSlider-->
+
+
+</body>
+</html>
